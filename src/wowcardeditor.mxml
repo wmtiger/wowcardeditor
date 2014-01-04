@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	
+	<mx:Script>
+		<![CDATA[
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				// TODO 插入数据库数据，并且写入本地文件
+				
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Label y="40" left="10" width="100" height="21" text="tname:"/>
+	<mx:TextInput id="tname" x="120" y="38" width="100" height="23" editable="true"/>
+	<mx:Label y="66" left="10" width="100" height="21" text="desc:"/>
+	<mx:Label y="92" left="10" width="100" height="21" text="type:"/>
+	<mx:Label y="118" left="10" width="100" height="21" text="camp:"/>
+	<mx:TextInput id="tdesc" x="120" y="64" width="100" height="23" editable="true"/>
+	<mx:TextInput id="ttype" x="120" y="90" width="100" height="23" editable="true"/>
+	<mx:TextInput id="tcamp" x="120" y="116" width="100" height="23" editable="true"/>
+	<mx:Label y="144" left="10" width="100" height="21" text="imgId:"/>
+	<mx:TextInput id="timgid" x="120" y="142" width="100" height="23" editable="true"/>
+	<mx:Label y="196" left="10" width="100" height="21" text="atk"/>
+	<mx:TextInput id="tatk" x="120" y="194" width="100" height="23" editable="true" text="1"/>
+	<mx:Label y="222" left="10" width="100" height="21" text="hp"/>
+	<mx:Label y="248" left="10" width="100" height="21" text="quality"/>
+	<mx:Label y="274" left="10" width="100" height="21" text="keywords"/>
+	<mx:TextInput id="thp" x="120" y="220" width="100" height="23" editable="true" text="1"/>
+	<mx:TextInput id="tquality" x="120" y="246" width="100" height="23" editable="true" text="0"/>
+	<mx:TextInput id="tkeywords" x="120" y="272" width="100" height="23" editable="true"/>
+	<mx:Label y="300" left="10" width="100" height="21" text="creation"/>
+	<mx:TextInput id="tcreation" x="120" y="298" width="100" height="23" editable="true" text="10"/>
+	<mx:Label y="352" left="10" width="100" height="21" text="skillIds"/>
+	<mx:TextInput id="tskillIds" x="120" y="350" width="100" height="23" editable="true"/>
+	<mx:Label y="378" left="10" width="100" height="21" text="imgEffectId"/>
+	<mx:Label y="404" left="10" width="100" height="21" text="atkSndId"/>
+	<mx:Label y="430" left="10" width="100" height="21" text="deadSndId"/>
+	<mx:TextInput id="timgEffectId" x="120" y="376" width="100" height="23" editable="true" text="0"/>
+	<mx:TextInput id="tatkSndId" x="120" y="402" width="100" height="23" editable="true" text="0"/>
+	<mx:TextInput id="tdeadSndId" x="120" y="428" width="100" height="23" editable="true" text="0"/>
+	<mx:Label y="456" left="10" width="100" height="21" text="joinFieldSndId"/>
+	<mx:TextInput id="tjoinFieldSndId" x="120" y="454" width="100" height="23" editable="true"
+				  text="0"/>
+	<mx:Label y="482" left="10" width="100" height="21" text="joinFieldEffectId"/>
+	<mx:TextInput id="tjoinFieldEffectId" x="120" y="480" width="100" height="23" editable="true"
+				  text="0"/>
+	<mx:TextInput id="tsplit" x="120" y="324" width="100" height="23" editable="true" text="5"/>
+	<mx:Label y="326" left="10" width="100" height="21" text="split"/>
+	<mx:TextInput id="tcost" x="120" y="168" width="100" height="23" editable="true" text="1"/>
+	<mx:Label y="170" left="10" width="100" height="21" text="cost"/>
+	<mx:TextInput id="tid" x="120" y="12" width="100" height="23" editable="true"/>
+	<mx:Label x="10" y="14" left="10" width="100" height="21" text="tid:"/>
+	<mx:DataGrid x="312" y="10">
+		<mx:columns>
+			<mx:DataGridColumn dataField="col1" headerText="列 1"/>
+			<mx:DataGridColumn dataField="col2" headerText="列 2"/>
+			<mx:DataGridColumn dataField="col3" headerText="列 3"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<mx:Button x="130" y="521" label="插入数据" click="button1_clickHandler(event)"/>
+	
+</mx:WindowedApplication>
